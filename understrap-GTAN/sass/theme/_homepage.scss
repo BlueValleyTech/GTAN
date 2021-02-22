@@ -1,0 +1,73 @@
+/** 
+ * Homepage styles 
+ */
+ 
+ 
+.home {
+
+	.wp-block-embed,
+	.wp-block-cover {
+		margin-bottom: 28px;
+	}
+	video {
+		height: auto;
+	}
+	
+}
+
+.family-pod {
+	a {
+		color: $white;
+		text-decoration: none;
+		&:hover h2, &:focus h2, &:active h2 {
+			font-size: 40px;
+		}
+	}
+	h2 {
+		padding-top: 110px;
+		transition: font-size 0.3s ease-in-out;
+	}
+}
+
+.wp-block-cover .wp-block-cover__inner-container {
+	width: auto;
+	max-width: 50%;
+	background-color: $white;
+	color: $darkblue;
+	font: 700 30px/35px $sansserif;
+	padding: 25px;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	
+	.wp-block-buttons {
+		text-align: center;
+	}
+	
+	p {
+		margin: 0 0 10px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.wp-block-cover .wp-block-cover__inner-container {
+		max-width: 80%;
+	}
+}
+
+
+
+@include media-breakpoint-up(md) {
+	.wp-block-columns .wp-block-column .pod.vertical-image {
+		
+		figure {
+			float: right;
+			width: 45%;
+			max-height: inherit;
+			margin: 0 0 5% 5%;
+		}
+	}
+}

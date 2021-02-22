@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@font-face {
+  font-family: 'nimbus_sans_bold';
+  src: url('NimbusSanL-Bol-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nimbus_sans_bold_italic';
+  src: url('NimbusSanL-BolIta-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nimbus_sans_regular_italic';
+  src: url('NimbusSanL-RegIta-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nimbus_sans_regular';
+  src: url('NimbusSanL-Reg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/fa-brands-400.eot');
+  src: url('../fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'), url('../fonts/fa-brands-400.woff2') format('woff2'), url('../fonts/fa-brands-400.woff') format('woff'), url('../fonts/fa-brands-400.ttf') format('truetype'), url('../fonts/fa-brands-400.svg#fontawesome') format('svg');
+}
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.wp-block {
+  max-width: 1140px;
+}
+/** === Base Typography === */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  font-size: 1rem;
+}
+h1 {
+  font: 55px/60px 'Noto Serif', times, serif;
+}
+h2 {
+  margin: 0 0 10px;
+  font: 35px/40px 'Noto Serif', times, serif;
+}
+h3 {
+  font: 30px/35px 'Noto Serif', times, serif;
+}
+.wp-block-embed, figure, p {
+  margin: 0 0 30px;
+}
+.wp-block-cover-image .wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container, .wp-block-cover__video-background .wp-block-cover__inner-container {
+  color: #f8f9f9;
+}
+.interior-header h1 {
+  font-size: 55px;
+}
+.interior-header h1:before {
+  display: block;
+  content: " ";
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  margin: 0 auto 15px;
+}
+.interior-header p {
+  margin: 0 30%;
+}
+.interior-header p.pre-heading {
+  margin: -50px 0 15px;
+  font: 100 17px/20px 'Noto Serif', times, serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.interior-header p[role=textbox] {
+  margin: 0;
+}
+/* /////  Columns  ////////////////////////////// */
+.wp-block-column .wp-block-button {
+  transition: all 0.2s linear;
+}
+.wp-block-column .wp-block-button .wp-block-button__link {
+  display: inline-block;
+  margin: 0;
+  padding: 16px 30px;
+  border-radius: 0;
+  border: 3px solid #131313;
+  box-shadow: none;
+  color: #131313;
+  background-color: transparent !important;
+  font: 16px/20px 'Noto Serif', times, serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  transition: all 0.2s ease-in-out;
+}
+.wp-block-column .wp-block-button .wp-block-button__link:hover, .wp-block-column .wp-block-button .wp-block-button__link:focus {
+  color: #fff;
+  background-color: #131313 !important;
+}
+.wp-block-column .wp-block-button .wp-block-button__link:active {
+  transform: translateY(2px);
+}
+.blue .wp-block-column .wp-block-button .wp-block-button__link {
+  border: 3px solid #fff;
+  color: #fff;
+}
+.blue .wp-block-column .wp-block-button .wp-block-button__link:hover, .blue .wp-block-column .wp-block-button .wp-block-button__link:focus {
+  color: #0175ae;
+  background-color: #fff !important;
+}
+.col-md-12 {
+  padding: 0;
+}
+.wp-block-columns.blue {
+  background: #0175ae;
+  color: #fff;
+}
+.wp-block-column {
+  flex-basis: calc(50%);
+}
+.wp-block-column.text {
+  padding: 4% 6% 4% 4%;
+}
+.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+  margin-left: 0;
+}
+.wp-block-image {
+  margin-bottom: 0;
+}
+/* /////  Homepage  ////////////////////////////// */
+.home .wp-block-embed, .home .wp-block-cover {
+  margin-bottom: 28px;
+}
+.family-pod a {
+  color: #fff;
+  text-decoration: none;
+}
+.family-pod a:hover h2, .family-pod a:focus h2, .family-pod a:active h2 {
+  font-size: 40px;
+}
+.family-pod h2 {
+  padding-top: 110px;
+  transition: font-size 0.3s ease-in-out;
+}
+/* /////  Interior Detail page  ////////////////////////////// */
+#primary {
+  padding: 0;
+}
+h1.entry-title {
+  display: none;
+}
+.home h1.entry-title {
+  display: block;
+}
+.interior-header h1 {
+  font-size: 55px;
+}
+.interior-header h1:before {
+  display: block;
+  content: " ";
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  margin: 0 auto 15px;
+}
+.interior-header p {
+  margin: 0 30%;
+}
+.interior-header p.pre-heading {
+  margin: -50px 0 15px;
+  font: 100 17px/20px 'Noto Serif', times, serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.interior-content {
+  position: relative;
+  z-index: 100;
+  margin: -100px 15% 0;
+}
+.interior-content.white {
+  background: #fff;
+  padding: 40px;
+}

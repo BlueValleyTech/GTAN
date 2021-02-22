@@ -1,0 +1,83 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+
+
+$black: #131313;
+$darkgrey: #9e9e9e;
+$grey: #f0f0f0;
+$white: #fff;
+$green: #98bc34;
+$brightblue: #00a1e5;
+$blue: #0175ae;
+$darkblue: #25306e;
+
+
+$primary: #5533ff; 
+
+$lighttext: $white;
+$darktext: $black;
+
+
+
+
+@font-face {
+    font-family: 'nimbus_sans_bold';
+    src: url('NimbusSanL-Bol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus_sans_bold_italic';
+    src: url('NimbusSanL-BolIta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus_sans_regular_italic';
+    src: url('NimbusSanL-RegIta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus_sans_regular';
+    src: url('NimbusSanL-Reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  //font-display: $fa-font-display;
+  src: url('../fonts/fa-brands-400.eot');
+  src: url('../fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/fa-brands-400.woff2') format('woff2'),
+  url('../fonts/fa-brands-400.woff') format('woff'),
+  url('../fonts/fa-brands-400.ttf') format('truetype'),
+  url('../fonts/fa-brands-400.svg#fontawesome') format('svg');
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+
+$fontawesome: 'Font Awesome 5 Brands';
+$serif: 'Noto Serif', times, serif; 
+$roboto: 'Roboto', sans-serif;
+$condensed: 'Roboto Condensed', sans-serif;
+$sansserif: 'Open Sans', sans-serif;
+
+.fab {
+  font-family: $fontawesome;
+  font-weight: 400;
+}

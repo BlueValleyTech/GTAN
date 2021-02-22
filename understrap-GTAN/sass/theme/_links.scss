@@ -1,0 +1,74 @@
+.entry-content {
+	
+	.button {
+		transition: all 0.2s linear;
+		
+		a {
+			display: inline-block;
+		    margin: 20px 0 0;
+		    padding: 16px 30px;
+			border-radius: 0;
+		    border: 3px solid $white;
+		    box-shadow: none;
+		    color: $black;
+		    background-color: transparent !important;
+		    font: 600 16px/20px $sansserif;
+		    text-align: center;
+		    text-decoration: none;
+		    overflow-wrap: break-word;
+			transition: all 0.2s ease-in-out;
+			
+			&:hover, 
+			&:focus {
+				color: $white;
+				background-color: $black !important;
+			}
+			&:active {
+				transform: translateY(2px);
+			}
+		}		
+	}
+}
+
+
+.green,
+.dark-blue,
+.blue,
+.bright-blue {
+	.button {
+		a {
+		    color: $white;			
+		}		
+	}
+}
+
+
+.wp-block-button {
+		transition: all 0.2s linear;
+		
+		a.wp-block-button__link {
+			display: inline-block;
+		    margin: 0;
+		    padding: 12px 24px;
+			border-radius: 0;
+		    border: 3px solid $blue;
+		    box-shadow: none;
+		    color: $blue;
+		    background-color: transparent !important;
+		    font: 700 16px/20px $condensed;
+		    text-transform: uppercase;
+		    text-align: center;
+		    text-decoration: none;
+		    overflow-wrap: break-word;
+			transition: all 0.2s ease-in-out;
+			
+			&:hover, 
+			&:focus {
+				color: $white;
+				background-color: $blue !important;
+			}
+			&:active {
+				transform: translateY(2px);
+			}
+		}		
+	}
