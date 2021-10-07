@@ -134,7 +134,12 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	 */
 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
 		if ( ! is_admin() ) {
-			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary understrap-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More...',
+			$button_text = "Read More...";
+			global $post;
+			if (get_post_meta( $post->ID, 'call_to_action_options_call-to-action-button-text', true ) != '') {
+				$button_text = get_post_meta( $post->ID, 'call_to_action_options_call-to-action-button-text', true );
+			}
+			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary understrap-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( $button_text,
 			'understrap' ) . '</a></p>';
 		}
 		return $post_excerpt;

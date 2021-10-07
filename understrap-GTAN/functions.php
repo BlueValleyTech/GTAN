@@ -51,3 +51,12 @@ function modify_valid_children($settings){
     $settings['valid_children']="+a[div|p|ul|ol|li|h1|h2|h3|h4|h5|h5|h6]";
     return $settings;
 }
+
+/**
+* Registers an editor stylesheet for the theme.
+*/
+function gtan_theme_add_editor_styles() {
+add_editor_style( 'css/custom-editor-style.css' );
+}
+add_action( 'admin_init', 'gtan_theme_add_editor_styles' );
+

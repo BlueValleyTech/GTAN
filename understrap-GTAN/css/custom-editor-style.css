@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;400;500&display=swap');
 @font-face {
   font-family: 'nimbus_sans_bold';
   src: url('NimbusSanL-Bol-webfont.woff') format('woff');
@@ -42,7 +43,7 @@
 }
 /** === Base Typography === */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Yantramanav', 'Open Sans', sans-serif;
 }
 p {
   font-size: 1rem;
@@ -131,6 +132,7 @@ h3 {
 }
 .wp-block-column {
   flex-basis: calc(50%);
+  border: 1px solid green;
 }
 .wp-block-column.text {
   padding: 4% 6% 4% 4%;
@@ -194,4 +196,27 @@ h1.entry-title {
 .interior-content.white {
   background: #fff;
   padding: 40px;
+}
+.block-editor-block-list__block .wp-block-column {
+  border: 3px solid green !important;
+}
+.background.has-background {
+  margin: 0 0 3%;
+  padding: 5%;
+}
+.background.grey, .background.gray {
+  background: #f6f5f7;
+  color: #131313 !important;
+}
+.background.green {
+  background: #98bc34;
+}
+.background.dark-blue {
+  background: #25306e;
+}
+.background.blue {
+  background: #0175ae;
+}
+.background.bright-blue {
+  background: #00a1e5;
 }

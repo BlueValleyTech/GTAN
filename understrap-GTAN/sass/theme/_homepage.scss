@@ -29,8 +29,9 @@
 	}
 }
 
-.wp-block-cover .wp-block-cover__inner-container {
+.home .wp-block-cover .wp-block-cover__inner-container {
 	width: auto;
+	margin: 0 0 0 5% !important;
 	max-width: 50%;
 	background-color: $white;
 	color: $darkblue;
@@ -53,8 +54,13 @@
 }
 
 @include media-breakpoint-down(md) {
-	.wp-block-cover .wp-block-cover__inner-container {
-		max-width: 80%;
+	.home .wp-block-cover {
+		justify-content: center !important;
+		
+		.wp-block-cover__inner-container {
+			max-width: 80%;
+			margin: 0 5% !important;
+		}
 	}
 }
 
